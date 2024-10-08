@@ -14,10 +14,9 @@ var isValid = function(s) {
         if (bracketMap[char]) {
             stack.push(char);
         } else {
-            // If it's a close bracket, check for matching open bracket
             const lastOpenBracket = stack.pop();
             if (bracketMap[lastOpenBracket] !== char) {
-                return false; // Mismatched brackets
+                return false;
             }
         }
     }
