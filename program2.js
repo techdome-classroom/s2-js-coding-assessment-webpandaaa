@@ -20,7 +20,6 @@ var romanToInt = function(s) {
         const currentValue = romanMap[s[i]];
         const nextValue = romanMap[s[i + 1]];
 
-        // If the current value is less than the next value, subtract it
         if (nextValue > currentValue) {
             total -= currentValue;
         } else {
