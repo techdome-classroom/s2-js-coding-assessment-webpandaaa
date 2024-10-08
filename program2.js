@@ -12,6 +12,9 @@ var romanToInt = function(s) {
         'D': 500,
         'M': 1000
     };
+
+    let total = 0;
+    const length = s.length;
 };
 
 
