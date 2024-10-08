@@ -11,7 +11,6 @@ var isValid = function(s) {
     };
 
     for (let char of s) {
-        // If it's an open bracket, push it onto the stack
         if (bracketMap[char]) {
             stack.push(char);
         } else {
